@@ -98,6 +98,11 @@ body {
     font-size: 12px;
 }
 
+.buttoonn{
+    display: flex;
+    justify-content: center;
+}
+
 .login-box form button {
     position: relative;
     display: inline-block;
