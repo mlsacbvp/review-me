@@ -33,9 +33,12 @@ function getData(){
     });
 
     console.log(formDataObj);
-    // if(API_Client.isEmailValid == true){
-    //     API_Client.Submission(formDataObj);
-    // }
+    if (true) { //replace with below code 
+        //API_Client.isEmailValid == true
+        // TODO: check this function as api_key is not
+        console.log('success');
+        API_Client.Submission();
+    }
 }
 
 

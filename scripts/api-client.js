@@ -33,6 +33,21 @@ const API_Client = {
 
     Submission(formDataObj){
         const scriptURL = SECRET.SCRIPT_URL;
+        const form = document.forms['google-sheet']
+        const promise = fetch(scriptURL, {
+            method: 'POST',
+            headers: {
+                
+            },
+            body: new FormData(form) })
+        
+        form.addEventListener('submit', onsubmitSuccess => {
+            onsubmitSuccess.preventDefault();
+            console.log("form submission success");
+            promise
+                .catch(error => console.error('Error!', error.message))
+        })
+        
 
     },
 }
