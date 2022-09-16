@@ -14,7 +14,7 @@
 
 <body>
     <div class="login-box">
-        <img src="..\images\logo.png" alt="MLSC Logo" class="logo">
+        <img src="/review-me/images/logo.png" alt="MLSC Logo" class="logo">
         <h2 id="event_name"></h2>
         <p id="event_desc"></p>
         <form method="post">
@@ -35,9 +35,11 @@
                 <input id="rating" type="range" name="rating" min="0" max="5" default="3" required>
                 <label>Rate The Event</label>
             </div>
-            <p>Review/Suggestions:</p>
+            <p class="salaah">Review/Suggestions:</p>
             <div class="text_area">
-            <textarea id="review" style="resize: none;" name="" id="" cols="50" rows="10"></textarea>
+                <textarea id="review"
+                    placeholder="Tell us how much you liked the event and what all things can we improvise for the next event "
+                    style="resize: none;" name="" id="" cols="50" rows="10"></textarea>
             </div>
             <br>
             <div class="buttoonn"><button type="button" id="submit">
