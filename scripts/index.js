@@ -14,13 +14,26 @@ function BindEvents(){
 }
 
 
-function validateEmail(){
+async function validateEmail(){
     mail_id = document.querySelector('#email').value;
-    API_Client.Validation(mail_id);
 
-    // if(API_Client.isEmailValid == false){
-    //     document.getElementById('warn').innerText = 'Invalid Email Provided';
-    // }    
+    try {
+        const result = await (await API_Client.Validation(mail_id)).json();
+        //console.log(result.result);
+        //console.log(API_Client.isEmailValid);
+
+        if(result.result == 'valid'){
+            API_Client.isEmailValid = true;
+            document.getElementById('warn').innerText = '';
+        }else{
+            API_Client.isEmailValid = false;
+            document.getElementById('warn').innerText = 'Invalid Email Provided';
+        }
+        
+    }catch(err){
+        window.alert('Weak Internet Connection ', err);
+    }
+
 }
 
 
@@ -32,13 +45,37 @@ function getData(){
         formDataObj[field] = document.querySelector('#' + field).value;
     });
 
-    console.log(formDataObj);
-    if (true) { //replace with below code 
-        //API_Client.isEmailValid == true
-        // TODO: check this function as api_key is not
-        console.log('success');
-        API_Client.Submission();
+    if(API_Client.isEmailValid == true){
+        document.getElementById('warn').innerText = '';
     }
+
+    if(API_Client.isEmailValid == true){
+        submitData(formDataObj);
+    }else{
+        window.alert('Invalid Email Provided!')
+    }
+   
+}
+
+async function submitData(formDataObj){
+
+    //console.log(formDataObj);
+
+    try{
+        const result = await (await API_Client.Submission(formDataObj)).json();
+        if(result.result == 'success'){
+            //console.log(result.result);
+            window.open("thanks_page/thanks.html", "_self");
+
+        }else{
+            window.alert("Error in form submission")
+        }
+
+    }catch(err){
+        console.log('error is ',err);
+        window.alert("Internal Server Error");
+    }
+    
 }
 
 
