@@ -10,5 +10,5 @@ const EVENT = {
 
 const SECRET = {
     API_KEY : '0723390536fe4e92b3be657a2fd156dc',
-    SCRIPT_URL : 'https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec',
+    SCRIPT_URL: 'https://sleepy-wildwood-70687.herokuapp.com/https://script.google.com/macros/s/AKfycbyiJqQKBhpCsEAvoROsE-YgYYKgGEXN5Af3XLhzMl2lxwYmxIHuwDe2AHAPsJZAZVjG/exec'
 }
