@@ -10,10 +10,11 @@ body {
 
 }
 
+
 .login-box {
     position: absolute;
-    left: 32%;
-    width: 500px;
+    left: 33%;
+    width: 33%;
     padding: 45px;
     /* transform: translate(-50%, -50%); */
     margin: auto;
@@ -87,6 +88,12 @@ img {
     transition: .5s;
 }
 
+.text_area{
+    display: flex;
+    justify-content: center;
+}
+
+
 .login-box .user-box input:focus~label,
 .login-box .user-box input:valid~label {
     top: -20px;
@@ -132,7 +139,6 @@ img {
         0 0 25px #03e9f4,
         0 0 50px #03e9f4,
         0 0 100px #03e9f4;
-
 
 }
 
@@ -232,13 +238,13 @@ button {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width: 950px) {
     .login-box {
         position: absolute;
         left: 0;
-        width: 410px;
-        padding: 25px;
-        height: 1050px;
+        width: 100%;
+        padding: 20px;
+        height: 1080px;
         margin: auto;
         /* background: rgba(0, 0, 0, .4); */
         box-sizing: border-box;
@@ -262,7 +268,7 @@ button {
 
     .text_area{
         display: flex;
-        width: 360px;
+        justify-content: center;
     }
 
 }
