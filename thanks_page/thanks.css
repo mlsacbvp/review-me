@@ -1,0 +1,22 @@
+body{
+    background-color: #203A61;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 50rem;
+}
+
+.message{
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.message img{
+    width: 15rem;
+}
