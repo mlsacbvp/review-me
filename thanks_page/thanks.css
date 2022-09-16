@@ -7,7 +7,7 @@ body{
     justify-content: center;
 }
 .logo img{
-    width: 50rem;
+    width: 60%;
 }
 
 .message{
@@ -17,6 +17,21 @@ body{
     font-family: sans-serif;
 }
 
-.message img{
-    width: 15rem;
+.envelope{
+    width: 16%;
+}
+
+@media (max-width:950px){
+    .message{
+        display: block;
+    }
+    .logo img{
+        width: 100%;
+    }
+    h1{
+        font-size: 125%;
+    }
+    .envelope{
+        width: 30%;
+    }
 }
