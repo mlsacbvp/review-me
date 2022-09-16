@@ -236,8 +236,8 @@ button {
     .login-box {
         position: absolute;
         left: 0;
-        width: 500px;
-        padding: 45px;
+        width: 410px;
+        padding: 25px;
         height: 1050px;
         margin: auto;
         /* background: rgba(0, 0, 0, .4); */
@@ -253,9 +253,16 @@ button {
         justify-content: center;
     }
 
-    .login-box {
-
-        left: 0;
-
+    .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
+
+    .text_area{
+        display: flex;
+        width: 360px;
+    }
+
 }
