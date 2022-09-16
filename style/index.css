@@ -12,8 +12,6 @@ body {
 
 .login-box {
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
     left: 32%;
     width: 500px;
     padding: 45px;
@@ -26,7 +24,7 @@ body {
     /* height: 100vh; */
 }
 
-img{
+img {
     margin: auto;
     width: 420px;
 }
@@ -97,7 +95,15 @@ img{
     font-size: 12px;
 }
 
-.buttoonn{
+#warn {
+    color: red;
+    /* background-color: #03e9f4; */
+    margin-left: 183px;
+
+}
+
+
+.buttoonn {
     display: flex;
     justify-content: center;
 }
@@ -223,5 +229,33 @@ button {
     50%,
     100% {
         bottom: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    .login-box {
+        position: absolute;
+        left: 0;
+        width: 500px;
+        padding: 45px;
+        height: 1050px;
+        margin: auto;
+        /* background: rgba(0, 0, 0, .4); */
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+        /* height: 100vh; */
+    }
+
+    body {
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .login-box {
+
+        left: 0;
+
     }
 }
