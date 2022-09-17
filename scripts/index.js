@@ -72,8 +72,14 @@ async function submitData(formDataObj){
     addLoading();
     //console.log(formDataObj);
 
+    form_Data = new FormData();
+    // to change the json to form Data for http
+    for ( var key in formDataObj ){
+        form_Data.append(key , formDataObj[key])
+    }
+
     try{
-        const result = await (await API_Client.Submission(formDataObj)).json();
+        const result = await (await API_Client.Submission(form_Data)).json();
         if(result.result == 'success'){
             //console.log(result.result);
             window.open("thanks_page/thanks.html", "_self");
