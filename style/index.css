@@ -8,8 +8,8 @@ body {
 
 .login-box {
     position: absolute;
-    left: 25%;
-    width: 50%;
+    left: 30%;
+    width: 40%;
     padding: 45px;
     /* transform: translate(-50%, -50%); */
     margin: auto;
@@ -101,16 +101,17 @@ img {
 
 .login-box .user-box input:focus~label,
 .login-box .user-box input:valid~label {
-    top: -20px;
+    top: -30px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;
+    /* background: transparent; */
 }
 
 #warn {
     color: red;
-    /* background-color: #03e9f4; */
-    margin-left: 183px;
+    margin-left: 170px;
+    font-size: small;
 
 }
 
