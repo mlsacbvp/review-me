@@ -49,16 +49,27 @@ function getData(){
         document.getElementById('warn').innerText = '';
     }
 
-    if(API_Client.isEmailValid == true){
-        submitData(formDataObj);
-    }else{
-        window.alert('Invalid Email Provided!')
-    }
+    validateData(formDataObj);
    
+}
+
+function validateData(formDataObj){
+
+    if(!formDataObj['name']){
+        window.alert('Name field is required!')
+    }else if(!formDataObj['college']){
+        window.alert('College field is required!')
+    }else if(API_Client.isEmailValid != true){
+        window.alert('Invalid Email Provided!')
+    }else{
+        submitData(formDataObj);
+    }
+
 }
 
 async function submitData(formDataObj){
 
+    addLoading();
     //console.log(formDataObj);
 
     try{
@@ -76,6 +87,14 @@ async function submitData(formDataObj){
         window.alert("Internal Server Error");
     }
     
+}
+
+function addLoading(){
+    const img = document.createElement('img');
+    img.className = 'loading';
+    img.src = 'images/loading.gif';
+    img.alt = 'loading';
+    document.getElementById('box').appendChild(img);
 }
 
 

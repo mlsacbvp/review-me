@@ -8,8 +8,8 @@ body {
 
 .login-box {
     position: absolute;
-    left: 33%;
-    width: 33%;
+    left: 25%;
+    width: 50%;
     padding: 45px;
     /* transform: translate(-50%, -50%); */
     margin: auto;
@@ -284,4 +284,10 @@ button {
         justify-content: center;
     }
 
+}
+
+.loading {
+    width: 10%;
+    height: 10;
+    margin-left: 45%;
 }
