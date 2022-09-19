@@ -1,7 +1,7 @@
 # review-me📃
 A review form for our events!
 
-**Access the form using the link given below! 🌐**
+# Access the form using the link given below! 🌐
 
 https://review-me-bay.vercel.app
 
