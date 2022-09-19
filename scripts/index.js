@@ -82,6 +82,7 @@ async function submitData(formDataObj){
         const result = await (await API_Client.Submission(form_Data)).json();
         if(result.result == 'success'){
             //console.log(result.result);
+            clearData();
             window.open("thanks_page/thanks.html", "_self");
 
         }else{
@@ -101,6 +102,14 @@ function addLoading(){
     img.src = 'images/loading.gif';
     img.alt = 'loading';
     document.getElementById('box').appendChild(img);
+}
+
+function clearData(){
+    const fields = ['name', 'email', 'college', 'rating', 'review'];
+
+    fields.forEach(field => {
+        document.querySelector('#' + field).value = '';
+    });
 }
 
 
