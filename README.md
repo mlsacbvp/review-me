@@ -1,11 +1,11 @@
-# review-me
+# review-me📃
 A review form for our events!
 
-**Access the form using the link given below!**
+**Access the form using the link given below! 🌐**
 
 https://review-me-bay.vercel.app
 
-# Screenshots
+# Screenshots 📷
 ![Form](https://user-images.githubusercontent.com/84740041/190959793-99add0f9-9d71-4993-a968-8feede1ded02.jpeg)
 
 
