@@ -16,7 +16,7 @@ A review form for our events!
 
     git clone https://github.com/mlsacbvp/review-me.git
 
-> Step-4 - Open the folder in your Code Editor(VS CODE is used here).
+> Step-4 - Open the folder in your Code Editor.
 
 > Step-5 - Run/Open with Live server the file "index.html".
 
