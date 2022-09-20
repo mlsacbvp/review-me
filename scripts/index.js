@@ -98,6 +98,7 @@ async function submitData(formDataObj){
 
 function addLoading(){
     const img = document.createElement('img');
+    img.id = 'loading';
     img.className = 'loading';
     img.src = 'images/loading.gif';
     img.alt = 'loading';
@@ -110,6 +111,8 @@ function clearData(){
     fields.forEach(field => {
         document.querySelector('#' + field).value = '';
     });
+
+    document.getElementById('loading').remove();
 }
 
 
