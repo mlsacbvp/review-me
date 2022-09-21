@@ -1,11 +1,8 @@
 //for constants & keys
 
 const EVENT = {
-    NAME : 'Event Name',
-    DESC : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia consequuntur dolores, eligendi possimus
-    facilis qui repellat iae sunt tempore hic ipsa voluptas porro facilis cum! Dicta quisquam id at! Earum
-    iste nesciunt pariatur repellat? Aspernatur inventore deserunt quibusdam veritatis perspiciatis aut porro
-    laborum, quidem repellat distinctio quae odit.`,
+    NAME : 'Project Showdown',
+    DESC : `The final showdown of a thrilling week of fixing endless bugs, and attending countless meetings which came with a lot of new experiences and learnings. It's the 'RESULT DAY' of how creatively the thoughts were turned into reality, how challenges and hardships were tackled with teamwork, determination and constant hard work.`,
 }
 
 const SECRET = {
